@@ -5,24 +5,27 @@ Hello guys. Thank you for taking a moment to see my code. It is all writen in py
 
 What this code does is that it takes a file location from your computer, or a excel file in a csv format, which will be read through pandas with the code: 
 
-dataset = pd.read_csv('C:/Users/patel/Downloads/StudentGrades.csv')
+data = pd.read_csv('C:/Users/patel/Downloads/manhattan.csv')
 
-That is a sample file location for my excel csv, so you can download a data set which is in csv format and copy its file location. REMEBER TO HAVE FORWARD SLASHES!!!
+That is a sample file location, so you can download a data set which is in csv format and copy its file location. REMEBER TO HAVE FORWARD SLASHES!!!
 
 Data set Source: Kaggle.com
 
 Also, I am using a coding notebook called Jupyter Notebook through an app called Anaconda.
 
 What this code else can do is that by reading the code, you can extract all necessary information with the other lines of codes below the read csv code.
-I made the data set which I converted into a csv before setting the file location for the code to execute. 
+I got the data set which I converted into a csv before setting the file location for the code to execute. 
 
-My code is about students, their number, age, gender, and their grades. It is a sample data set which I made to work on this project. 
-This code evaluates the data set and, with different lines of code, does different things.
+My code is about the prices of houses in Manhattan based on the features and objects in the house. It is a sample data set which I got to work on this project. 
+This code evaluates the data set and, with different lines of code, does different commands.
 
-If you get a data set and run the code of print(X), you will notice that the student number, the student's age, gender in digits 0 & 1, and History Grade shows up.
-That showed three because of the first three lines with the code: X = dataset.iloc[:, [1, 2, 3]].values
+If you are confused about where the data prediction kicks in, look at lines 38 - 42 about guy1 prediction.
+That is a dummy data set which is feeding the computer information which is finding the price of the house based on it's features.
 
-With this code, you can find the average score, and much more. 
-More importantly, as for the theme, this follows with Data Prediction in business with the last lines of code, where you can make your own prediction for the grades of a student.
+Make sure that if you get an error about guy1, or whatever you decide to name it, it must have the same data format as the topics given in line 16. 
+It shows 11 topics, so you must have 11 exact data pieces for your guy1 information.
 
-You can play around with this code. If you have any questions, feel free to reach out !
+With this code, you can test the data with your own data set.
+More importantly, as for the theme, this follows with Data Prediction in business with the last lines of code, where you can make your own prediction for the features of a house.
+
+You can play around with this code. If you have any questions, feel free to reach out!
