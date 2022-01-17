@@ -28,4 +28,26 @@ It shows 11 topics, so you must have 11 exact data pieces for your guy1 informat
 With this code, you can test the data with your own data set.
 More importantly, as for the theme, this follows with Data Prediction in business with the last lines of code, where you can make your own prediction for the features of a house.
 
+INFO:
+## Inspiration
+My parents inspired me to do this project.
+
+## What it does
+It can predict data if you give information, like if you have the square feet, # of bathroom and bedrooms all has a price which is the data set, and you make up a dummy data with sqft and # of bathroom and bedrooms, then you can predict the price of that place with this code of data prediction.
+
+## How we built it
+I built it with python only. I used Jupyter Notebook through an app called Anaconda.
+
+## Challenges we ran into
+The code running succesful because each time it would show an error. Even if it was as simple as a syntax error, or it was devastating as a value error to solve.
+
+## Accomplishments that we're proud of
+Getting the code to be successful.
+
+## What we learned
+I learned that you should keep trying and not give up, because if I had given up on this project, then I wouldn't be able to complete it and have eventually gotten a succesful project.
+
+## What's next for Data Prediction System
+I am planning to try and make the code more detailed and simpler, and supposedly turn it into a website, so people can enter a csv format dataset, enter the data they have on a single data, and figure out the missing data.
+
 You can play around with this code. If you have any questions, feel free to reach out!
