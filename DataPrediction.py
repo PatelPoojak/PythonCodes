@@ -1,51 +1,42 @@
-import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
-import sklearn
-import numpy as np
-
-dataset = pd.read_csv('C:/Users/patel/Downloads/StudentGrades.csv')
-X = dataset.iloc[:, [1, 2, 3]].values
-y = dataset.iloc[:, -1].values
-
-z = X[:,1]
-
-print(z)
-
-from sklearn.preprocessing import LabelEncoder
-le = LabelEncoder()
-X[:,1] = le.fit_transform(X[:,1])
-
-print(X)
-
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0)
+from sklearn.linear_model import LinearRegression
 
-from sklearn.preprocessing import StandardScaler
-sc = StandardScaler()
-X_train = sc.fit_transform(X_train)
-X_test = sc.transform(X_test)
+data = pd.read_csv('C:/Users/patel/Downloads/manhattan.csv')
 
-from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
-classifier.fit(X_train, y_train)
+df = pd.DataFrame(data)
 
-y_pred = classifier.predict(X_test)
+df.head()
+
+y = df['rent']
+
+y.head()
+
+x = df[['bathrooms', 'size_sqft', 'floor', 'no_fee', 'has_roofdeck', 'has_washer_dryer', 'has_doorman', 'has_elevator', 'has_dishwasher', 'has_patio', 'has_gym']]
+
+x.head()
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, train_size = 0.8, test_size = 0.2, random_state = 6)
+
+mlr = LinearRegression()
+
+mlr.fit(x_train, y_train)
+
+y_predict = mlr.predict(x_test)
+
+print(y_predict)
 
 print(y_test)
 
-print(y_pred)
+x_axis = y_test
 
-from sklearn.metrics import confusion_matrix,accuracy_score
-cm = confusion_matrix(y_test, y_pred)
-ac = accuracy_score(y_test,y_pred)
+y_axis = y_predict
 
-print(cm)
+plt.scatter(x_axis, y_axis, alpha = 0.4)
 
-print(ac)
+guy1 = [[1, 620, 1, 3, 1, 1, 1, 1, 0, 1, 1]]                 #CODE FOR DATA PREDICTION BASED ON INFO ABOVE
 
-X_new = [[0, 37, 80000]]
+guy1_predict = mlr.predict(guy1)                             #CODE FOR DATA PREDICTION BASED ON INFO ABOVE
 
-Y_new = classifier.predict(X_new)
-
-print(Y_new)
+print('guy1_predict =', guy1_predict)                        #CODE FOR DATA PREDICTION BASED ON INFO ABOVE
