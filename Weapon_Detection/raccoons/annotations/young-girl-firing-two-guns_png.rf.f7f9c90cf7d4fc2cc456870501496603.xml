@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>young-girl-firing-two-guns_png.rf.f7f9c90cf7d4fc2cc456870501496603.jpg</filename>
+	<path>young-girl-firing-two-guns_png.rf.f7f9c90cf7d4fc2cc456870501496603.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gun</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>302</xmin>
+			<xmax>484</xmax>
+			<ymin>244</ymin>
+			<ymax>380</ymax>
+		</bndbox>
+	</object>
+</annotation>

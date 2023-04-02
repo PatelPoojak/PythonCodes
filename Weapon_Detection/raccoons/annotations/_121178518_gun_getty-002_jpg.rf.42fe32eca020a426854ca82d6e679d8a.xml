@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>_121178518_gun_getty-002_jpg.rf.42fe32eca020a426854ca82d6e679d8a.jpg</filename>
+	<path>_121178518_gun_getty-002_jpg.rf.42fe32eca020a426854ca82d6e679d8a.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gun</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>76</xmin>
+			<xmax>441</xmax>
+			<ymin>73</ymin>
+			<ymax>484</ymax>
+		</bndbox>
+	</object>
+</annotation>

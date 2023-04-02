@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>Glock-pistol_jpg.rf.15647229e82e8fd42706e448b9e51bcc.jpg</filename>
+	<path>Glock-pistol_jpg.rf.15647229e82e8fd42706e448b9e51bcc.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gun</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>56</xmin>
+			<xmax>447</xmax>
+			<ymin>61</ymin>
+			<ymax>439</ymax>
+		</bndbox>
+	</object>
+</annotation>
